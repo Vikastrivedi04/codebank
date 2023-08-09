@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".flip").click(function() {
+                $(".panel").slideDown(5000);
+            })
+            $(".stop").click(function() {
+                $(".panel").stop();
+            })
+            $(".start").click(function() {
+                $(".panel").toggle(5000);
+            })
+        })
+    </script>
+    <style>
+        .flip,
+        .panel {
+            padding: 5px;
+            background-color: red;
+            font-size: 30px;
+            color: black;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        
+        .panel {
+            display: none;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="start">start slider</button>
+    <button class="stop">stop slider</button>
+    <div class="flip">Lorem ipsum dolor sit amet consectetur.</div>
+    <div class="panel">Lorem ipsum dolor sit amet.</div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("div").animate({
+                    // left: '250px',
+                    // opacity: '0.6',
+                    // height: '+=100px',
+                    // widt h: '+=100px',
+                    // margin: '200px'
+                    height: 'toggle'
+                });
+            });
+        });
+        $(document).ready(function() {
+            $("button").click(function() {
+                var div = $("div");
+                div.animate({
+                    left: '100px',
+                    width: '+=200px'
+                }, "slow");
+                div.animate({
+                    fontSize: '100px'
+                }, "slow");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <button>open the animation</button>
+    <p style="margin-top:40px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ratione sit nam corrupti? Et dolorem commodi obcaecati laudantium explicabo a magni eos, incidunt placeat eaque quo? Magnam fugit facere quia obcaecati blanditiis, a similique tenetur
+        quibusdam impedit possimus ipsa dolor minus iste illo aut totam cum nesciunt, architecto optio est!</p>
+    <div style="background-color: green; height: 100px; width: 200px; position: absolute;">hello</div>
+</body>
+
+</html>

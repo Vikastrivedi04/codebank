@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".tabs-blog a").click(function() {
+                $(".tabs-blog a").removeClass('active');
+                $(this).addClass('active');
+                $('.tab-content').hide();
+                var ids = $(this).attr('href');
+                $(ids).show();
+            })
+        })
+    </script>
+    <style>
+        .tabs-blog {
+            display: flex;
+        }
+        
+        ul li {
+            padding: 20px;
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .tab-content {
+            display: none;
+            border: 1px solid black;
+            margin-left: 50px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs">
+        <nav>
+            <ul class="tabs-blog">
+                <li>
+                    <a href="#tab-1">tab-1</a>
+                </li>
+                <li>
+                    <a href="#tab-2">tab-2</a>
+                </li>
+                <li>
+                    <a href="#tab-3">tab-3</a>
+                </li>
+                <li>
+                    <a href="#tab-4">tab-4</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="tabs-description">
+            <div class="tab-content" id="tab-1" style="display: block;">
+                <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia eum quos, nihil sequi doloremque sint repellat ad explicabo aliquid alias neque, temporibus omnis aut.</p>
+
+            </div>
+            <div class="tab-content" id="tab-2">
+                <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia eum quos, nihil sequi doloremque sint repellat ad explicabo aliquid alias neque, temporibus omnis aut.</p>
+
+            </div>
+            <div id="tab-3" class="tab-content">
+                <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia eum quos, nihil sequi doloremque sint repellat ad explicabo </p>
+
+            </div>
+            <div id="tab-4" class="tab-content">
+                <p>4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, exercitationem.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

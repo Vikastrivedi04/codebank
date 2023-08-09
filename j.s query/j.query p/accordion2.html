@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion-2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".accordion-title").click(function() {
+                $(".accordion-title").removeClass('active');
+                $(this).addClass('active');
+                $('.accordion-description').slideUp();
+                $(this).next().toggle();
+            })
+        })
+    </script>
+    <style>
+        .accordion-block {
+            background-color: #2a7fa5;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 20px;
+            position: relative;
+        }
+        
+        .accordion-description {
+            display: none;
+            margin: 20px;
+        }
+        
+        .accordion-title:after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-top: 2px solid #000;
+            border-left: 2px solid #000;
+            transform: rotate(225deg);
+            position: absolute;
+            top: 19px;
+            right: 32px;
+        }
+        
+        .accordion-title {
+            padding-left: 20px;
+        }
+        
+        .accordion-title.active:after {
+            transform: rotate(46deg);
+            top: 31px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion-block">
+        <h3 class="accordion-title">accordin-1</h3>
+        <div class="accordion-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias voluptate vitae? Sequi eos eligendi quia quam, dicta iste magnam nam totam minus tempore corrupti?</p>
+        </div>
+    </div>
+    <div class="accordion-block">
+        <h3 class="accordion-title">accordin-2</h3>
+        <div class="accordion-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias voluptate vitae? Sequi eos eligendi quia quam, dicta iste magnam nam totam minus tempore corrupti?</p>
+        </div>
+    </div>
+    <div class="accordion-block">
+        <h3 class="accordion-title">accordin-3</h3>
+        <div class="accordion-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias voluptate vitae? Sequi eos eligendi quia quam, dicta iste magnam nam totam minus tempore corrupti?</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(Document).ready(function() {
+            $(".tabs__blog a").click(function() {
+                $(".tabs__blog a").removeClass('active');
+                $(this).addClass('active');
+                $('.tab-contact').hide();
+                var ids = $(this).attr('href');
+                $(ids).show();
+            })
+        })
+    </script>
+    <style>
+        .tabs {
+            background-color: darkblue;
+            border-radius: 5px;
+        }
+        
+        .tab-contact {
+            background-color: #fff;
+            border: 5px solid darkblue;
+            display: none;
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+        
+        ul li a {
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        
+        ul li a.active {
+            background-color: #00d0ff;
+            color: black;
+        }
+        
+        .tabs__blog {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs">
+        <nav>
+            <ul class="tabs__blog">
+                <li><a href="#tab1" class="active">home</a></li>
+                <li><a href="#tab2">about</a></li>
+                <li><a href="#tab3">contact</a></li>
+                <li><a href="#tab4">log-in</a></li>
+            </ul>
+        </nav>
+        <div class="tab-contact" id="tab1" style="display: block;">
+            <h3>this is home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolor. Repudiandae, aut?</p>
+        </div>
+        <div class="tab-contact" id="tab2">
+            <h3>this is about</h3>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="tab-contact" id="tab3">
+            <h3>this is contact</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="tab-contact" id="tab4">
+            <h3>this is log-in</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ducimus dolores amet labore aliquid sequi?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

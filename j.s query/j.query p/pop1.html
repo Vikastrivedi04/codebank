@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#open").click(function() {
+                $($(this).attr('href')).show();
+                $('body').addClass('model-on');
+            });
+
+            $(".btn-close").click(function() {
+                $('body').removeClass('model-on');
+                $(this).parent().parent().hide();
+            });
+        });
+    </script>
+    <style>
+        .model-on {
+            overflow: hidden;
+        }
+        
+        #fancybox-1 {
+            background-color: rgba(19, 47, 67, 0.5);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        
+        .box-open {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 40%;
+            right: 0;
+        }
+        
+        .btn {
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 10px;
+            color: black;
+            border: 1px solid black;
+            letter-spacing: 4px;
+        }
+        
+        .btn:hover {
+            letter-spacing: 4px;
+            opacity: 0.8;
+            background-color: #27b92e;
+        }
+        
+        #fancybox-1 img {
+            width: 20px;
+            position: absolute;
+            right: 9px;
+            top: 16px;
+        }
+        
+        .box__pop {
+            width: 500px;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div class="box-open">
+        <div class="box-modal">
+            <h1>box-open</h1>
+            <a href="#fancybox-1" id="open" class="btn">click me</a>
+        </div>
+        <div id="fancybox-1">
+            <div class="box__pop">
+                <a class="btn-close" href="#"><img src="/close.png" alt="loading"></a>
+                <h3>this is modal</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ducimus, porro eveniet dicta quia itaque impedit suscipit. Cum, assumenda unde.</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

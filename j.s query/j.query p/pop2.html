@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fancybox-2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                $('.btn').click(function() {
+                    var tagnav = $(this).attr('href');
+                    $(tagnav).show();
+                    $('body').addClass('model-on');
+                })
+
+
+                $('#fancybox-1').click(function(e) {
+                    if ($(e.target).closest(".modal").length === 0) {
+                        $(".modal").parent().hide();
+                    }
+                })
+
+            })
+            // $window.onclick = function(event) {
+            //     if (event.target == modal) {
+            //         modal.style.display = "none";
+            //     }
+            // }
+    </script>
+    <style>
+        .model-on {
+            overflow: hidden;
+        }
+        
+        #fancybox-1 {
+            background-color: rgba(255, 0, 98, 0.5);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        
+        #fancybox-2 {
+            background-color: rgba(58, 152, 183, 0.1);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        
+        .box-open {
+            position: fixed;
+            left: 40%;
+        }
+        
+        .modal img {
+            width: 20px;
+            position: absolute;
+            right: 9px;
+            top: 16px;
+        }
+        
+        .btn {
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 10px;
+            color: black;
+            border: 1px solid black;
+            letter-spacing: 4px;
+        }
+        
+        #fancybox-1 img {
+            width: 20px;
+            position: absolute;
+            right: 9px;
+            top: 16px;
+        }
+        
+        .modal {
+            width: 500px;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-open">
+        <div class="fancybox">
+            <h2>hello fancybox</h2>
+            <a href="#fancybox-1" class="btn">click me</a>
+            <a href="#fancybox-2" class="btn">click me</a>
+        </div>
+        <div id="fancybox-1">
+            <div class="modal">
+                <a href="#" class="btn-close"><img src="close.png" alt=""></a>
+                <h3>this modal box</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga officiis quod adipisci enim commodi sequi autem quis nobis dolore!</p>
+            </div>
+        </div>
+        <div id="fancybox-2">
+            <div class="modal">
+                <a href="#" class="btn-close"><img src="close.png" alt=""></a>
+                <h3>this modal box 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fuga officiis quod adipisci enim commodi sequi autem quis nobis dolore!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

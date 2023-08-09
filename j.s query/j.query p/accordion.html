@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".accordion-title").click(function() {
+                $(".accordion-title").removeClass('active');
+                $(this).addClass('active');
+                $('.accordion-description').slideUp();
+                $(this).next().toggle();
+            });
+        })
+    </script>
+    <style>
+        .accordion-title {
+            background-color: blue;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: #fff;
+            margin-top: 20px;
+            position: relative;
+        }
+        
+        .accordion-description {
+            display: none;
+        }
+        
+        .accordion-title:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #000;
+            border-left: 2px solid #000;
+            transform: rotate(225deg);
+            position: absolute;
+            top: 1px;
+            right: 15px;
+        }
+        
+        .accordion-title.active:after {
+            transform: rotate(46deg);
+            top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion-block">
+        <h3 class="accordion-title">accordin-1</h3>
+        <div class="accordion-description">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem consectetur blanditiis esse deleniti quam, voluptates minus vel soluta, aperiam praesentium id nobis cupiditate velit eius voluptas doloribus sequi. Eligendi optio omnis earum,
+                quia vitae magni quae perferendis enim explicabo. Magni quidem commodi, officiis laboriosam repellendus cumque! Fugit quas ut natus.</p>
+        </div>
+    </div>
+    <div class="accordion-block">
+        <h3 class="accordion-title">accordin-1</h3>
+        <div class="accordion-description">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem consectetur blanditiis esse deleniti quam, voluptates minus vel soluta, aperiam praesentium id nobis cupiditate velit eius voluptas doloribus sequi. Eligendi optio omnis earum,
+                quia vitae magni quae perferendis enim explicabo. Magni quidem commodi, officiis laboriosam repellendus cumque! Fugit quas ut natus.</p>
+        </div>
+    </div>
+    <div class="accordion-block">
+        <h3 class="accordion-title">accordin-1</h3>
+        <div class="accordion-description">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem consectetur blanditiis esse deleniti quam, voluptates minus vel soluta, aperiam praesentium id nobis cupiditate velit eius voluptas doloribus sequi. Eligendi optio omnis earum,
+                quia vitae magni quae perferendis enim explicabo. Magni quidem commodi, officiis laboriosam repellendus cumque! Fugit quas ut natus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

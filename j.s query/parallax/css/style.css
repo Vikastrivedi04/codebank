@@ -1,0 +1,11 @@
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    color: #fff;
+    margin-top: 55px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
