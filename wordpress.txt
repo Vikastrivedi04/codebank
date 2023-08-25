@@ -77,8 +77,7 @@ image and head link path use> <?php echo get_template_directory_uri(); ?>/
 		)
 	);
 
-    <!-- nav-menu specific page 
-  -->
+    <!-- nav-menu specific page  -->
 
     template folder create >
 
@@ -108,7 +107,7 @@ image and head link path use> <?php echo get_template_directory_uri(); ?>/
         if( $image ) {
             echo wp_get_attachment_image( $image, $size );
         }
- 0000000000000000000000000)))))))00000000000
+    ?> </a>
     Notice: wordpress site acf plugin Return Format > id img select and Library > all select 
 
     <!--how to use acf wordpress page  -->
@@ -215,8 +214,8 @@ install and use slider....
 
 
 
-
-1. word press instal
+<!-- wordpress  theme-->
+1. 1. word press instal
 2. theme generactor krege (underscore.me)
 3. php my admin ja ke data base crate krege (php my admin)
 4. wp-admin ja ke login krege 
@@ -232,4 +231,4 @@ install and use slider....
 How to create template?
 1.theme coding location me template nam ka folder create karen
 2. page.php ko  copy karke tep     folder me paste karke create template ka name denge.
-3.  wordpress me add new page me 
+3.  wordpress me add new page me

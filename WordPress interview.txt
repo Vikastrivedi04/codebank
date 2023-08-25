@@ -1,0 +1,148 @@
+WORDPRESS Work total
+-Theam intrigration
+-Add Menubar in header
+-Blog Page-Dynamic (PHP)
+-Add Template
+-Plugin   
+                  1.wp form    (contact form)   
+                  2.contact form 7    (contact form)   
+                  3.ACF -Dynamic (PHP)    
+                  4.-Woocommerce (theame store front)    
+                  5.-wp code 
+                  6-Custom post type ui    
+                  7-elementor 
+                  8-elementor pro
+
+
+ wordpress start the project:
+ 
+1. word press instal
+2. theme generactor krege (underscore.me)
+3. php my admin ja ke data base crate krege (php my admin)
+4. wp-admin ja ke login krege 
+5. appearance ke under theme me jake generate ki hui  theame ko active karenge
+6.  header.php me ham apna header banayenge
+7. footer.php me appna footer banayenge
+8. page.php ko duplicate front-page.php banake inme apna main containt add karenge
+9. 
+{SHORT CODE
+	install wordpress>generate theame(underscores.me)>create database(localhost/phpmyadmin/>
+
+
+How to create template?
+1.theme coding location me template nam ka folder create karen
+2. page.php ko  copy karke tep     folder me paste karke create template ka name denge.
+3.  wordpress me add new page me 
+
+
+
+
+
+
+
+
+
+WORDPRESS interview Question 
+
+1. What is the difference between WordPress.com and WordPress.org? WordPress क्या है और इसका उपयोग क्यों किया जाता है?
+
+ans. WordPress.com => WordPress.com provides hosting to use creat website and use wordpress software.
+WordPress.org 
+not prowide hosting information, downloads, resources, and a community
+  
+
+2.WordPress में Widgets क्या होते हैं और कैसे वे साइडबार में जोड़े जाते हैं?
+
+ans.  Widget वर्डप्रेस यूजर को कोड के बिना उनकी साइट के design और content को control करने के लिए एक सरल और आसान तरीका प्रदान करने के लिए बनाया गया है । अगर हम किसी WordPress साइट पर जाते है और साइडबार,फुटर में कंटेंट देखते है वो विजेट ही होते है । विजेट को हम विजेट एरिया में ही लगा सकते है 
+
+3. WordPress में Child Theme क्या होता है और इसका क्या उपयोग होता है?
+ans. किसी भी themes की sub theme होती है जो अपने parent theme की functionality, features और styles को अपने में inherit कर लेती है। child theme के द्वारा आप सुरक्षित तरीके से अपनी WordPress theme को modify/customize कर सकते है।
+
+
+4. वर्डप्रेस में Custom Post Types क्या होते हैं और उन्हें कैसे बनाया जाता है?
+
+ans. panle me passific page ko add karne krane ke liye. 
+WPCode का उपयोग करके एक कस्टम पोस्ट प्रकार बनाना (अनुशंसित)
+एक प्लगइन के साथ एक कस्टम पोस्ट प्रकार बनाना
+
+5. Prefix of Wordpress table by default?
+ans. wp_ is the prefix 
+
+6. वर्डप्रेस में डेटाबेस टेबल्स के बारे में कुछ बताएं।
+ans. 12 database table hote he.
+	1. wp_commentmeta		2.  wp_comments
+	3. wp_links			4.  wp_options
+	5. wp_postmeta			6.  wp_posts
+	7. wp_terms			8.  wp_termmeta
+	9. wp_term_relationships	10. wp_term_taxonomy
+	11.wp_usermeta			12. wp_users
+
+7. वर्डप्रेस साइट के पैरफॉर्मेंस को बेहतर कैसे किया जा सकता है?
+ans. Plugin ki maddad se jase ke youst SEO.
+
+9. What is requirement for a wordpress server?
+disk space: 1gb
+php 8.0 version
+512mb ram
+1.0Ghz cpu
+ans. PHP version 7.3 or greater,
+ MySQL version 5.6 or greater OR MariaDB version 10.1 or greater, HTTPS support, and Nginx or Apache with mod_rewrite module
+
+10. CPT 
+ans. function.php  => code paste
+      Archive.php  => New page
+      single.php   => New page
+
+11. What are wordpress taxonomies?
+
+ans. Taxonomies are the method of classifying content and data in WordPress. When you use a taxonomy you're grouping similar things together. The taxonomy refers to the sum of those groups. As with Post Types, there are a number of default taxonomies, and you can also create your own.
+default taxonomies 
+category , tag , link categary , post format
+
+12. Whare wordpress contant is store?
+ans. MySQL Database
+
+13. filter hook (8 fliter hook)
+ans. has_filter , add , current , remove , apply
+
+14. What is plugin in wordpress?
+
+ans. Plugins are packages of code that extend the core functionality of WordPress. WordPress plugins are made up of PHP code and can include other assets such as images, CSS, and JavaScript. By making your own plugin you are extending WordPress, i.e. building additional functionality on top of what WordPress already offers.
+
+14. What are some Template Tages?
+
+ans. Tamplates tages are used within the tamplates to customize your blog.The common types of tges are
+post tages link tags
+
+15. What is the purpose of the wp-config.php file in WordPress?
+
+ans. वर्डप्रेस को डेटा संग्रहीत करने और पुनर्प्राप्त करने के लिए डेटाबेस के साथ संचार करने की अनुमति देता है
+
+
+16. What is a doctype?
+ans.information" to the browser about what document type ...
+
+
+project details
+
+cropmax
+kanhagirl
+daringolifeline
+kvagroproducts
+rajeshreeagriexport
+
+
+staf 14
+
+3 desiner
+5 html/web
+2 PHP
+1 project man
+2 SEO
+1 addministor
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
