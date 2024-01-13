@@ -1,1 +1,27 @@
+1. css full form
+=>Cascading Style Sheets
 
+2.background-property
+=>background-image:    background-repeat: background-attachment: background-position: 
+
+3. display : none
+=> koi bhi space nhi leta
+
+4. Vissiable:- hidden
+=> isme space leta he but pointer nhi lgta
+
+5. opcity: 0
+=> ye space bhi leta and isme hover bhi kr skte 
+
+6. img tag Attribute
+=>src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600" style
+
+7. media query
+=> @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+8. Breakpoint media query
+=>1023, 767, 577, 479, 
