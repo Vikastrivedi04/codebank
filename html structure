@@ -35,4 +35,9 @@ keywords, author of the document, and viewport settings.
 6.What is syntax
 =>Syntax is a set of rules that describes the structure and word order of a sentence
 
-7.
+7.What are void elements in HTML?
+=>HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc.
+
+8.Is the <datalist> tag and <select> tag same?
+=>Its similar to select, But datalist has additional functionalities like auto suggest. You can even type and see suggestions as and when you type.
+  User will also be able to write items which is not there in list.28 Jul 2011
