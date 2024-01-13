@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIKAS</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
 
+
+1. meta tag use 
+=>Metadata is data (information) about data. <meta> tags always go inside the <head> element, 
+and are typically used to specify character set, page description,
+keywords, author of the document, and viewport settings.
+
+2.html full name
+=>Hypertext Markup Language
+
+3. Semantic Elements in HTML
+=><footer><header><main><nav><section><summary><article> <aside> <details><figcaption><figure>
+
+4. block element 
+=> <footer>, form, h1 to h6, header, hr, main, nav,p
+
+5. in-innine element
+=> a, br, button, img, input, span strong, sub, sup, textarea
