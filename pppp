@@ -4,3 +4,60 @@ link mate css or extra file
 
 
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/js/jquery-3.7.0.min.js"></script>
+.btn--yellow {
+	background-color: #ffb424;
+	color: #222426;
+}
+
+.btn--yellow:hover {
+	background-color: #e69f16;
+	color: #222426;
+}
+
+
+.form-control {
+	-webkit-appearance: none;
+   	-moz-appearance: none;
+	width: 100%;
+	border: 1px solid #707070;
+	height: 44px;
+	padding: 8px 16px;
+	background-color: #fff;
+	font-family: var(--body-font-family);
+	font-size: var(--body-font-size);
+	color: var(--body-font-color);
+}
+
+.form-control:focus {
+	border-color: #1a1a1a;
+	outline: none;
+}
+
+textarea.form-control {
+	height: auto;
+}
+
+.form-group {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+
+/*!
+ *	Header
+ * ----------------------------------------------- */
+.site-header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.header--wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
